@@ -1,3 +1,5 @@
+package model;
+
 public class Gerente {
     private String nome;
     private String email;
