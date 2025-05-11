@@ -2,7 +2,7 @@ package model;
 
 public class Cliente {
     private static int contador = 1;
-    private final int id;
+    private int id;
     private String nome;
     private String cpf;
     private String telefone;
@@ -16,6 +16,9 @@ public class Cliente {
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
+    }
+
+    public Cliente(String nome, String cpf, String telefone, String email) {
     }
 
 
