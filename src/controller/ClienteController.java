@@ -1,31 +1,32 @@
 package controller;
 
+
 import model.Cliente;
 import service.ClienteService;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.util.List;
 
 public class ClienteController {
-    private ClienteService clienteService;
+    private ClienteService clienteService = new ClienteService();
 
-    public ClienteController(Connection conn) {
-        this.clienteService = new ClienteService(conn);
+    public void criarCliente(Cliente cliente) {
+        clienteService.cadastrarCliente(cliente);
     }
 
-    public void criarClienteViaRequisicao(/* parâmetros simulando input */) {
-        Cliente c = new Cliente();
-        c.setNome("João");
-        c.setTelefone("119999999");
-        c.setEmail("joao@email.com");
-        c.setEndereco("Rua A, 123");
+    public Cliente buscarCliente(int id) {
+        return clienteService.obterCliente(id);
+    }
 
-        try {
-            clienteService.registrarNovoCliente(c);
-            System.out.println("Cliente cadastrado com sucesso.");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    public List<Cliente> listarClientes() {
+        return clienteService.listarClientes();
+    }
+
+    public void atualizarCliente(Cliente cliente) {
+        clienteService.atualizarCliente(cliente);
+    }
+
+    public void deletarCliente(int id) {
+        clienteService.removerCliente(id);
     }
 }
 

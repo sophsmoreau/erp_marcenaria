@@ -1,28 +1,29 @@
 package dao;
 
 import model.Cliente;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.util.List;
 
 public class ClienteDAO {
-    private Connection conn;
-
-    public ClienteDAO(Connection conn) {
-        this.conn = conn;
+    public void salvar(Cliente cliente) {
+        // Implementar lógica para salvar cliente no banco de dados
     }
 
-    public void salvar(Cliente cliente) throws SQLException {
-        String sql = "INSERT INTO clientes (nome, telefone, email, endereco) VALUES (?, ?, ?, ?)";
-        PreparedStatement stmt = conn.prepareStatement(sql);
-        stmt.setString(1, cliente.getNome());
-        stmt.setString(2, cliente.getTelefone());
-        stmt.setString(3, cliente.getEmail());
-        stmt.setString(4, cliente.getEndereco());
-        stmt.executeUpdate();
+    public Cliente buscarPorId(int id) {
+        // Implementar lógica para buscar cliente por ID
+        return null;
     }
 
-    // outros métodos: buscarPorId, listarTodos, atualizar, excluir
+    public List<Cliente> listarTodos() {
+        // Implementar lógica para listar todos os clientes
+        return null;
+    }
+
+    public void atualizar(Cliente cliente) {
+        // Implementar lógica para atualizar cliente
+    }
+
+    public void deletar(int id) {
+        // Implementar lógica para deletar cliente
+    }
 }
 
