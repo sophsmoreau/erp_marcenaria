@@ -1,43 +1,51 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
 
 public class Pedido {
-    private static int contador = 1;
-    private final int id;
-    private Cliente cliente;
-    private Produto produto;
-    private int quantidade;
+    private int id;
+    private int idOrcamento;
+    private String status;
+    private LocalDate dataPedido;
 
-    public Pedido(Cliente cliente, Produto produto, int quantidade) {
-        this.id = contador++;
-        this.cliente = cliente;
-        this.produto = produto;
-        this.quantidade = quantidade;
+    public Pedido() {}
+
+    public Pedido(int id, int idOrcamento, String status, LocalDate dataPedido) {
+        this.id = id;
+        this.idOrcamento = idOrcamento;
+        this.status = status;
+        this.dataPedido = dataPedido;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public Cliente getCliente(){
-        return cliente;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public Produto getProduto(){
-        return produto;
+    public int getIdOrcamento() {
+        return idOrcamento;
     }
 
-    public int getQuantidade(){
-        return quantidade;
+    public void setIdOrcamento(int idOrcamento) {
+        this.idOrcamento = idOrcamento;
     }
 
-    @Override
-    public String toString() {
-        return "Pedido ID: " + id +
-                ", Cliente: " + cliente.getNome() +
-                ", Produto: " + produto.getNome() +
-                ", Quantidade: " + quantidade;
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public LocalDate getDataPedido() {
+        return dataPedido;
+    }
+
+    public void setDataPedido(LocalDate dataPedido) {
+        this.dataPedido = dataPedido;
     }
 }

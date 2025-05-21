@@ -1,27 +1,50 @@
 package model;
 
 public class Produto {
-    private static int contador = 1;
-    private final int id;
+    private int id;
     private String nome;
-    private int quantidade;
+    private String descricao;
+    private double preco;
 
-    public Produto(String nome, int quantidade) {
-        this.id = contador++;
-        this.nome = nome;
-        this.quantidade = quantidade;
+    public Produto() {
     }
 
-    public int getId() { return id; }
+    public Produto(int id, String nome, String descricao, double preco) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+    }
 
-    public String getNome() { return nome; }
+    public int getId() {
+        return id;
+    }
 
-    public int getQuantidade() { return quantidade; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
+    public String getNome() {
+        return nome;
+    }
 
-    @Override
-    public String toString() {
-        return "Produto ID: " + id + ", Nome: " + nome + ", Quantidade: " + quantidade;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }
