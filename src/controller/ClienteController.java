@@ -1,32 +1,19 @@
 package controller;
 
-
 import model.Cliente;
 import service.ClienteService;
 
 import java.util.List;
 
 public class ClienteController {
-    private ClienteService clienteService = new ClienteService();
+    private ClienteService service = new ClienteService();
 
     public void criarCliente(Cliente cliente) {
-        clienteService.cadastrarCliente(cliente);
-    }
-
-    public Cliente buscarCliente(int id) {
-        return clienteService.obterCliente(id);
+        service.salvar(cliente);
     }
 
     public List<Cliente> listarClientes() {
-        return clienteService.listarClientes();
-    }
-
-    public void atualizarCliente(Cliente cliente) {
-        clienteService.atualizarCliente(cliente);
-    }
-
-    public void deletarCliente(int id) {
-        clienteService.removerCliente(id);
+        return service.listarTodos();
     }
 }
 

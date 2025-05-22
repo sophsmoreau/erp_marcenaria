@@ -1,20 +1,23 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Pedido {
     private int id;
-    private int idOrcamento;
-    private String status;
-    private LocalDate dataPedido;
+    private int clienteId;
+    private LocalDate data;
+    private double total;
+    private List<ItemPedido> itens;
 
-    public Pedido() {}
+    public Pedido(){}
 
-    public Pedido(int id, int idOrcamento, String status, LocalDate dataPedido) {
+    public Pedido(int id, int clienteId, LocalDate data, double total, List<ItemPedido> itens) {
         this.id = id;
-        this.idOrcamento = idOrcamento;
-        this.status = status;
-        this.dataPedido = dataPedido;
+        this.clienteId = clienteId;
+        this.data = data;
+        this.total = total;
+        this.itens = itens;
     }
 
     public int getId() {
@@ -25,27 +28,35 @@ public class Pedido {
         this.id = id;
     }
 
-    public int getIdOrcamento() {
-        return idOrcamento;
+    public int getClienteId() {
+        return clienteId;
     }
 
-    public void setIdOrcamento(int idOrcamento) {
-        this.idOrcamento = idOrcamento;
+    public void setClienteId(int clienteId) {
+        this.clienteId = clienteId;
     }
 
-    public String getStatus() {
-        return status;
+    public LocalDate getData() {
+        return data;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 
-    public LocalDate getDataPedido() {
-        return dataPedido;
+    public double getTotal() {
+        return total;
     }
 
-    public void setDataPedido(LocalDate dataPedido) {
-        this.dataPedido = dataPedido;
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public List<ItemPedido> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedido> itens) {
+        this.itens = itens;
     }
 }

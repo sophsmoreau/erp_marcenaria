@@ -3,20 +3,21 @@ package model;
 public class Cliente {
     private int id;
     private String nome;
+    private String cpfCnpj;
     private String telefone;
     private String email;
     private String endereco;
 
-    public Cliente(int id, String nome, String telefone, String email, String endereco) {
+    public Cliente() {
+    }
+
+    public Cliente(int id, String nome, String cpfCnpj, String telefone, String email, String endereco) {
         this.id = id;
         this.nome = nome;
+        this.cpfCnpj = cpfCnpj;
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
-    }
-
-    public Cliente() {
-
     }
 
     public int getId() {
@@ -33,6 +34,14 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpfCnpj() {
+        return cpfCnpj;
+    }
+
+    public void setCpfCnpj(String cpfCnpj) {
+        this.cpfCnpj = cpfCnpj;
     }
 
     public String getTelefone() {

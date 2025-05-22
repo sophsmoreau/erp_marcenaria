@@ -5,15 +5,17 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
+    private int estoque;
 
     public Produto() {
     }
 
-    public Produto(int id, String nome, String descricao, double preco) {
+    public Produto(int id, String nome, String descricao, double preco, int estoque) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
+        this.estoque = estoque;
     }
 
     public int getId() {
@@ -46,5 +48,13 @@ public class Produto {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public int getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
     }
 }
