@@ -1,7 +1,8 @@
-package controller;
+package br.com.marcenaria.controller;
 
-import model.Cliente;
-import service.ClienteService;
+
+import br.com.marcenaria.model.Cliente;
+import br.com.marcenaria.service.ClienteService;
 
 import java.util.List;
 

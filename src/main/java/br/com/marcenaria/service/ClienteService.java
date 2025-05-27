@@ -1,6 +1,7 @@
-package service;
+package br.com.marcenaria.service;
 
-import model.Cliente;
+
+import br.com.marcenaria.model.Cliente;
 
 import java.util.List;
 

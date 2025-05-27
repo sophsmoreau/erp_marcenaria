@@ -1,6 +1,7 @@
-package service;
+package br.com.marcenaria.service;
 
-import model.Usuario;
+
+import br.com.marcenaria.model.Usuario;
 
 public class UsuarioService {
     public boolean autenticar(String email, String senha) {

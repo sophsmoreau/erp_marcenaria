@@ -1,6 +1,7 @@
-package service;
+package br.com.marcenaria.service;
 
-import model.Produto;
+
+import br.com.marcenaria.model.Produto;
 
 public class ProdutoService {
     public void atualizarEstoque(Produto produto, int quantidadeVendida) {

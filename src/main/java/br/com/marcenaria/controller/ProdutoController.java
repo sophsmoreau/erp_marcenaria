@@ -1,7 +1,8 @@
-package controller;
+package br.com.marcenaria.controller;
 
-import model.Produto;
-import service.ProdutoService;
+
+import br.com.marcenaria.model.Produto;
+import br.com.marcenaria.service.ProdutoService;
 
 public class ProdutoController {
     private ProdutoService service = new ProdutoService();

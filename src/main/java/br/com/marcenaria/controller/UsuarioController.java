@@ -1,7 +1,8 @@
-package controller;
+package br.com.marcenaria.controller;
 
-import model.Usuario;
-import service.UsuarioService;
+
+import br.com.marcenaria.model.Usuario;
+import br.com.marcenaria.service.UsuarioService;
 
 public class UsuarioController {
     private UsuarioService service = new UsuarioService();

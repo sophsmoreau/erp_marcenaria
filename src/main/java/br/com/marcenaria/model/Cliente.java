@@ -1,4 +1,4 @@
-package model;
+package br.com.marcenaria.model;
 
 public class Cliente {
     private int id;

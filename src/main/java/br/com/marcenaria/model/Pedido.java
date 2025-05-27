@@ -1,4 +1,4 @@
-package model;
+package br.com.marcenaria.model;
 
 import java.time.LocalDate;
 import java.util.List;

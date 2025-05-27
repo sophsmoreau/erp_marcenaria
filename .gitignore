@@ -1,2 +1,2 @@
 # Ignorar arquivos sensíveis
-config.properties
+src/main/resources/config.properties

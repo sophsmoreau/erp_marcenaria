@@ -1,7 +1,8 @@
-package controller;
+package br.com.marcenaria.controller;
 
-import model.Pedido;
-import service.PedidoService;
+
+import br.com.marcenaria.model.Pedido;
+import br.com.marcenaria.service.PedidoService;
 
 public class PedidoController {
     private PedidoService service = new PedidoService();

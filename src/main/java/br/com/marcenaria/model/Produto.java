@@ -1,4 +1,4 @@
-package model;
+package br.com.marcenaria.model;
 
 public class Produto {
     private int id;
@@ -57,4 +57,5 @@ public class Produto {
     public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
+
 }
