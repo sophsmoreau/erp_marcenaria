@@ -55,12 +55,12 @@ Atualmente, o sistema conta com:
 
 Siga estes passos para abrir o projeto no IntelliJ IDEA:
 
-2. 1. Inicie o IntelliJ IDEA
-2. 2. No menu principal, clique em:
+1. Inicie o IntelliJ IDEA
+2. No menu principal, clique em:
    **File > Open**
-2. 3. Navegue até o diretório onde clonou o repositório
-2. 4. Selecione a pasta `erp-marcenaria`
-2. 5. Clique no botão `OK` para abrir o projeto
+3. Navegue até o diretório onde clonou o repositório
+4. Selecione a pasta `erp-marcenaria`
+5. Clique no botão `OK` para abrir o projeto
 
 Dica: Se for a primeira vez abrindo o projeto, o IntelliJ pode levar alguns minutos para indexar os arquivos.
 
@@ -68,13 +68,13 @@ Dica: Se for a primeira vez abrindo o projeto, o IntelliJ pode levar alguns minu
 
 Siga estas etapas para configurar o JDK no IntelliJ IDEA:
 
-3. 1. No menu principal, selecione:
+1. No menu principal, selecione:
 **File > Project Structure**
 
-3. 2. Na janela que será aberta:
+2. Na janela que será aberta:
 - No painel esquerdo, selecione `Project`
 
-3. 3. Configurações do projeto:
+3. Configurações do projeto:
 - Em `Project SDK`:
   ```
   Clique no dropdown e selecione "JDK 18"
@@ -86,18 +86,18 @@ Siga estas etapas para configurar o JDK no IntelliJ IDEA:
   Selecione "18" no dropdown
   ```
 
-4. 4. Confirme as alterações:
+4. Confirme as alterações:
 - Clique em `Apply` e depois em `OK`
 
 4. **Execute o projeto**
    
-4. 1. No painel de projeto, navegue até:
+1. No painel de projeto, navegue até:
       **src/Main.java**
     
-4. 2. Clique com o botão direito no arquivo e selecione:
+2. Clique com o botão direito no arquivo e selecione:
       **Run 'Main.main()'**
 
-4. **Solução de Problemas Comuns**
+5. **Solução de Problemas Comuns**
 
    - Erro "JDK not found":
    1. Verifique se o JDK 18 está instalado
